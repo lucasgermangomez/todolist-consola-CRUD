@@ -11,8 +11,17 @@ if (!comando) {
 };
 
 switch(comando) {
-    case "read": {
-        console.log(read());
+    case "list": {
+        data = read();
+
+        console.log("LISTADO DE TAREAS:");
+        console.log("------------------");
+        console.log("                  ");
+        for (task of data) {
+            console.log(`Nombre: ${task.title}`);
+            console.log(`Descripcion: ${task.desc}`);
+            console.log("----------------------");
+        }
         break;
     }
     case "add": {
@@ -34,7 +43,7 @@ switch(comando) {
         }
         break;
     }
-    case "update": {
+    case "edit": {
         const title = process.argv[3];
         const desc = process.argv[4];
 
