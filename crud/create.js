@@ -1,6 +1,7 @@
 const fs = require('fs');
 const read = require('./read');
 const path = require('path');
+const writeJson = require('./writeJson');
 
 const create = (title, desc) => {
     const previousData = read();
@@ -9,13 +10,12 @@ const create = (title, desc) => {
         desc
     }
     const lastData = [...previousData, newTask];
-    const parsedData = JSON.stringify(lastData, null, 2);
-
+    
     try {
-        fs.writeFileSync(path.join(__dirname, '../taskData.json'), parsedData);
-        return true;
+    writeJson(lastData);
+    return true;
     }
-    catch(err) {
+    catch(e) {
         console.log("Error:");
         console.log(e);
         return false;

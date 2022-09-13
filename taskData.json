@@ -1,22 +1,14 @@
 [
   {
-    "title": "Tarea 3",
-    "desc": "Descripcion de tarea 3"
+    "title": "Tarea 6",
+    "desc": "Editando para probar funcion update"
+  },
+  {
+    "title": "Test3",
+    "desc": "Creando una tarea de prueba para probar module writejson"
   },
   {
     "title": "Tarea 4",
-    "desc": "Nueva descripcion para tarea 4"
-  },
-  {
-    "title": "Tarea 5",
-    "desc": "Descripcion de tarea 5"
-  },
-  {
-    "title": "Tarea 6",
-    "desc": "Descripcion de tarea 6"
-  },
-  {
-    "title": "Tarea nueva",
-    "desc": "Descripcion de tarea nueva"
+    "desc": "Probando funcion add"
   }
 ]
