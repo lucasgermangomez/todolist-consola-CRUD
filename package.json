@@ -1,0 +1,12 @@
+{
+  "name": "clase-7",
+  "version": "1.0.0",
+  "description": "todolist CRUD",
+  "main": "app.js",
+  "scripts": {
+    "test:read":"node crud/read.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
